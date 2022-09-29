@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+       
+            .header{
+              color: skyblue;
+              background-color:green ;
+             text-align: center;
+  }
+  legend{
+    text-align: center;
+   }
+   fieldset{
+    margin-left: 40px;
+    margin-right: 60px;
+   }
+   form{
+    padding: 10px 10px 50px 10px;
+    background-image: url(https://thumbs.dreamstime.com/b/spring-summer-season-abstract-nature-background-grass-blue-sky-back-49716369.jpg);
+   }
+   .button{
+    text-align: center;
+     color: green;
+
+
+
+   }
+  
+    </style>
+</head>
+<body>
+    <h1 class="header">APPLICATION FORM</h1>
+    <form action="intro.html"> 
+        <label for="text" >User name</label>
+        <input type="text" placeholder="your name" >
+    <br><br>
+    <label for="email">Email id</label>
+    <input type="email" placeholder="email id" >
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]).{8,}" title="make strong password">
+    <p><p>
+        <fieldset>
+           
+        <legend for="gender">select your gender</legend><br>
+        <input type="radio"  name="gender" required value="1">male<br>
+        <input type="radio"  name="gender" value="2">female<br> 
+        <input type="radio"  name="gender" value="3">others<br> 
+            </div>    
+    </fieldset>  
+        <p>
+            <fieldset>
+            <legend for="skills">Select your Skills</legend>
+            <input type="checkbox" name="skills">C<br>
+            <input type="checkbox" name="skills">C++<br>  
+            <input type="checkbox" name="skills">Java<br>
+            <input type="checkbox" name="skills">C#<br>
+            <input type="checkbox" name="skills">Python<br>
+            </fieldset>
+            <fieldset>
+                <legend for="Address">Address</legend>
+                <textarea name="Address" id="" cols="30" rows="5"></textarea>
+            </fieldset> 
+            <fieldset>
+                <legend for="Experience">Experience</legend>
+                <select name="Experience">
+                    <option valaue="Select">Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value=">=3">>=3</option>
+                </select><br>
+            </fieldset> <br>
+            <div class ="button">
+            <button> Submit</button>       
+        </form>
+        
+</body>
+
+</html>
